@@ -1,31 +1,31 @@
 async function validarNomeUsuario(nome) {
     if (!nome) return "O Nome do usuário é uma informação obrigatória.";
+    if (typeof nome !== "string") return "Inserção de caracteres inválidas.";
     if (!nome.trim()) return "O Nome do usuário deve conter caracteres válidos.";
-    if (typeof nome !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarNomeLojaUsuario(nome_loja) {
     if (!nome_loja) return "O Nome da Loja é uma informação obrigatória.";
+    if (typeof nome_loja !== "string") return "Inserção de caracteres inválidas.";
     if (!nome_loja.trim()) return "O Nome da Loja deve conter caracteres válidos.";
-    if (typeof nome_loja !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarEmailUsuario(email) {
     if (!email) return "Email do usuário é uma informação obrigatória.";
+    if (typeof email !== "string") return "Inserção de caracteres inválidas.";
     if (!email.trim()) return "Email do usuário deve conter caracteres válidos.";
-    if (typeof email !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarSenhaUsuario(senha) {
     if (!senha) return "Senha é uma informação obrigatória.";
+    if (typeof senha !== "string") return "Inserção de caracteres inválidas.";
     if (!senha.trim()) return "Senha do usuário deve conter caracteres válidos.";
-    if (typeof senha !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarNomeProduto(nome) {
     if (!nome) return "Nome do produto é uma informação obrigatória.";
+    if (typeof nome !== "string") return "Inserção de caracteres inválidas.";
     if (!nome.trim()) return "Nome do produto deve conter caracteres válidos.";
-    if (typeof nome !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarQuantidadeProduto(quantidade) {
@@ -46,8 +46,8 @@ async function validarPrecoProduto(preco) {
 
 async function validarDescricaoProduto(descricao) {
     if (!descricao) return "Descrição do produto é uma informação obrigatória.";
+    if (typeof descricao !== "string") return "Inserção de caracteres inválidas.";
     if (!descricao.trim()) return "Descrição do produto deve conter caracteres válidos.";
-    if (typeof descricao !== "string") return "Inserção de caracteres inválidas."
 }
 
 async function validarDadosUsuario(nome, nome_loja, email, senha) {
